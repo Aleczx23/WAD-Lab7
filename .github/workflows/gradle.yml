@@ -23,7 +23,7 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-     - name: Run tests
+      - name: Run tests
         run: ./gradlew test
         env:
           MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
