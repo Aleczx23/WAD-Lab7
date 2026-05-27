@@ -27,3 +27,6 @@ jobs:
         run: ./gradlew test
         env:
           MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
+
+      - name: Generate JaCoCo report
+        run: ./gradlew jacocoTestReport
